@@ -1,0 +1,153 @@
+/* HEADER */
+
+.header {
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+
+  border-bottom: 1px solid #ddd;
+
+  z-index: 100;
+}
+
+
+/* RIGHT SECTION */
+
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  column-gap: 25px;
+}
+
+
+/* ICON CONTAINERS */
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container,
+.current-user-picture {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+
+/* ICONS */
+
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
+
+  width: 24px;
+
+  height: 24px;
+}
+
+
+/* PROFILE PICTURE */
+
+.current-user-picture {
+
+  width: 32px;
+
+  height: 32px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+
+/* NOTIFICATION NUMBER */
+
+.notifications-count {
+
+  position: absolute;
+
+  top: -5px;
+
+  right: -5px;
+
+  background-color: #cc0000;
+
+  color: white;
+
+  font-size: 10px;
+
+  padding: 2px 5px;
+
+  border-radius: 10px;
+}
+
+
+/* TOOLTIP */
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip,
+.current-user-picture .tooltip {
+
+  font-family: Roboto, Arial;
+
+  position: absolute;
+
+  background-color: #616161;
+
+  color: white;
+
+  padding: 4px 8px;
+
+  border-radius: 2px;
+
+  font-size: 12px;
+
+  bottom: -30px;
+
+  opacity: 0;
+
+  transition: opacity 0.15s;
+
+  pointer-events: none;
+
+  white-space: nowrap;
+
+  z-index: 1000;
+}
+
+
+/* SHOW TOOLTIP */
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.current-user-picture:hover .tooltip {
+
+  opacity: 1;
+}
